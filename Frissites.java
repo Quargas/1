@@ -21,6 +21,7 @@ public class Frissites {
 
     indit inn;
     String path;
+    //gh
 
     public Frissites(indit inn_, String path_) {
         inn = inn_;
