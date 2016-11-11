@@ -31,9 +31,10 @@ public class indit {
         String dbName = "video";
         String driver = "com.mysql.jdbc.Driver";
         userName = us;
+        System.out.println("username "+ userName);
         try {
             Class.forName(driver).newInstance();
-            this.conn = DriverManager.getConnection(url + dbName + "?useUnicode=yes&characterEncoding=UTF-8", us, pw);//csatlakozás
+            this.conn = DriverManager.getConnection(url + dbName + "?useUnicode=yes&characterEncoding=UTF-8", userName, pw);//csatlakozás
             System.out.println("Connected to the database");
             connected = true;
             return true;
